@@ -1,2 +1,6 @@
 [font]
-normal = { family = "JetBrains Mono Nerd Font", style = "Regular" }
+size = 11
+
+[font.normal]
+family = "JetBrainsMono Nerd Font Mono"
+style = "Regular"
