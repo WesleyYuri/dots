@@ -1,5 +1,25 @@
-source $ZSH_CUSTOM/config.zsh
-source $ZSH_CUSTOM/aliases.zsh
-source $ZSH_CUSTOM/helpers.zsh
+export ZSH="$HOME/.oh-my-zsh"
 
-eval "$(/bin/mise activate zsh)"
+ZSH_THEME="bira"
+
+plugins=(
+    git
+    mise
+    npm
+)
+
+source $ZSH/oh-my-zsh.sh
+
+# plugins
+eval "$(/usr/bin/mise activate zsh)"
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# configs
+source ~/.config/zsh/aliases.zsh
+source ~/.config/zsh/helpers.zsh
+
+# Source all program files
+programs_dir=$HOME/.config/zsh/programs
+for script in $(find "$programs_dir"/ -type f); do
+  . "$script"
+done
