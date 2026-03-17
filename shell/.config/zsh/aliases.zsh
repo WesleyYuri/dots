@@ -24,7 +24,7 @@ fi
 export DOTFILES_DIR="$HOME/.dotfiles"
 
 if [[ -d "$DOTFILES_DIR" ]]; then
-    alias dotconfig="nvim $DOTFILES_DIR"
+    alias dotconfig="cd $DOTFILES_DIR && nvim $DOTFILES_DIR"
 else
     mkdir $DOTFILES_DIR
 fi
