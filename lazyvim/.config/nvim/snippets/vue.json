@@ -1,0 +1,15 @@
+{
+    "vsetup": {
+        "prefix": "vsetup",
+        "body": [
+            "<script setup>",
+            "</script>",
+            "",
+            "<template>",
+            "</template>",
+            "",
+            "<style scoped>",
+            "</style>"
+        ]
+    }
+}
